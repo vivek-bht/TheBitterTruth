@@ -1,0 +1,33 @@
+*{margin: 0;
+padding: 0;}
+.container{
+    width: 700px;
+    height: 350px;
+    border: 2px solid black;
+    margin: 100px 300px;
+    overflow: hidden;
+}
+#character{
+    position: relative;
+    top: 297px;
+}
+.arrow{
+    animation: jump .5s linear 0s 1;
+}
+#block{
+    position: relative;
+    top: 170px;
+    left: 615px;
+    height: 150px;
+    width: 150px;
+}
+@keyframes jump{
+    0%{top: 297px;}
+    40%{top: 150px;}
+    60%{top: 150px;}
+    100%{top: 297px;}
+}
+@keyframes slide {
+    0%{left: 615px;}
+    100%{left: -150px;}
+}
